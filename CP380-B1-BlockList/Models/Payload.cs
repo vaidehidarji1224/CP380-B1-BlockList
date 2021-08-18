@@ -12,17 +12,18 @@ namespace CP380_B1_BlockList.Models
         { get; set; }
         public TransactionTypes transType
         { get; set; }
-        public string titem
-        { get; set; }
+
         public int tamount
         { get; set; }
-
-        public Payload(string userName, TransactionTypes transType,  string titem , int tamount)
+        public string titem
+        { get; set; }
+        public Payload(string Tuser, TransactionTypes TransType, int Tamount, string Titem)
         {
-            this.user = userName;
-            this.transType = transType;
-            this.titem = titem;
-            this.tamount = tamount;
+            user = Tuser;
+           transType= TransType;
+            tamount = Tamount;
+            titem = Titem;
         }
+       }
     }
-}
+

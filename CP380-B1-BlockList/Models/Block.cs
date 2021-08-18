@@ -44,15 +44,16 @@ namespace CP380_B1_BlockList.Models
 
         public void Mine(int difficulty)
         {
-          string hashnumber= new string('C', difficulty);
+          string hashnumber= new('C', difficulty);
 
            while (Hash.Substring(0, difficulty) != hashnumber)
                 {
-                this.Nonce++;
-                this.Hash = this.CalculateHash();
+                Nonce++;
+                Hash = CalculateHash();
+             
             }
-            Hash = null;
 
+            Hash = null;
         }
     }
 }

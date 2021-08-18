@@ -12,8 +12,8 @@ namespace CP380_B1_BlockList
             var myChain = new BlockList();
 
             List<Payload> data = new()
-            { 
-                new Payload("user", TransactionTypes.GRANT, 10, null), 
+            {
+                new Payload("user", TransactionTypes.GRANT, 10, null),
                 new Payload("user", TransactionTypes.BUY, 10, "10C"),
             };
 
